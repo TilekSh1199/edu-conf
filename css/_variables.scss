@@ -1,0 +1,54 @@
+// ================================  Typography  =====================================
+$playfair:										 'Playfair Display', serif;
+$opensans:										 'Open Sans', sans-serif;
+$black:											 #3A3A3A;
+$blacklg:										 #5A5A5A;
+$gold:											 #E7AD44;
+$gray:											 #F5F5F5;
+$white:											 #FFF;
+$fb:											 #4B70AB;
+$twitter:										 #32B9E7;
+$pinterest:										 #D63533;
+$skype:											 #00AFF0;
+$youtube:										 #E62117;
+$behance:										 #33ABDB;
+$gplus:											 #FA5432;
+
+// ================================  Slidenav  =====================================
+$slidenav-width:                                 52px !default;
+$slidenav-height:                                52px !default;
+$slidenav-position-previous:                     20px !default;
+$slidenav-position-next:                         20px !default;
+
+// ================================  Dropdown  =====================================
+
+$dropdown-z-index:                               970 !default;
+$dropdown-width:                                 200px !default;
+$dropdown-margin-top:                            5px !default;
+$dropdown-padding:                               15px !default;
+$dropdown-background:                            #f5f5f5 !default;
+$dropdown-color:                                 #444 !default;
+$dropdown-font-size:                             1rem !default;
+$dropdown-animation:                             uk-fade !default;
+$dropdown-divider-border-width:                  1px !default;
+$dropdown-divider-border:                        #ddd !default;
+$dropdown-small-padding:                         5px !default;
+$dropdown-navbar-margin:                         0 !default;
+$dropdown-navbar-background:                     #f5f5f5 !default;
+$dropdown-navbar-color:                          #444 !default;
+$dropdown-navbar-animation:                      uk-slide-top-fixed !default;
+$dropdown-scrollable-height:                     200px !default;
+
+
+$dotnav-width:                                   10px;
+$dotnav-height:                                  10px;
+$dotnav-background:                              rgba(50,50,50,0.1) !default;
+
+$dotnav-hover-background:                        rgba(50,50,50,0.4) !default;
+$dotnav-onclick-background:                      rgba(50,50,50,0.6) !default;
+$dotnav-active-background:                       rgba(50,50,50,0.4) !default;
+
+$dotnav-contrast-background:                     rgba(255,255,255,0.4) !default;
+$dotnav-contrast-hover-background:               rgba(255,255,255,0.7) !default;
+$dotnav-contrast-onclick-background:             rgba(255,255,255,0.9) !default;
+$dotnav-contrast-active-background:              rgba(255,255,255,0.9) !default;

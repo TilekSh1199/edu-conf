@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<!--
+**********************************************************************************************************
+    Copyright (c) 2018 .
+**********************************************************************************************************  -->
+<!-- 
+Template Name: Omi Hotel - HTML Template
+Version: 1.0.0
+Author: Media City
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]> -->
+<html lang="en">
+<!-- <![endif]-->
+<!-- head -->
+<head>
+<title>Hotel - HTML Template</title>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Hotel" />
+<meta name="keywords" content="omi, html template, omi hotel template">
+<meta name="author" content="media-city" />
+<meta name="MobileOptimized" content="320" />
+<link rel="icon" type="image/icon" href="images/favicon/favicon.ico"> <!-- favicon-icon -->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet"> <!-- google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"> <!-- google fonts -->
+<link href="css/uikit.min.css" rel="stylesheet" type="text/css"/> <!-- uikit css -->
+<link href="css/datepicker.css" rel="stylesheet" type="text/css"/> <!-- datepicker css -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/> <!-- fontawesome css -->
+<link href="css/flaticon.css" rel="stylesheet" type="text/css"/> <!-- flaticon css -->
+<link href="css/style.css" rel="stylesheet" type="text/css"/> <!-- custom css -->
+<!-- end theme style -->
+</head>
+<!-- end head -->
+<!--body start-->
+<body>
+<!-- preloader --> 
+<!--   <div class="preloader">
+    <div class="status">
+      <div class="status-message">
+      </div>
+    </div>
+  </div> -->
+<!-- end preloader -->
+<!--  navigation -->
+  <header id="navbar" class="uk-navbar navbar" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}" data-uk-sticky="{top:-600, animation: 'uk-animation-slide-top'}">
+    <div class="uk-container uk-container-center">
+      <div class="uk-grid">
+        <div class="uk-width-large-2-10">
+          <div class="logo">
+            <a href="index.html" title="Logo"><img src="images/logo.png" alt="logo"></a>
+          </div>
+        </div>
+        <div class="uk-wdith-7-10 uk-hidden-medium uk-hidden-small">
+          <ul class="uk-navbar-nav navigation">
+            <li><a href="#home-slider">Home</a></li>
+            <li><a href="#about" data-uk-smooth-scroll>About</a></li>
+            <li><a href="#facilities" data-uk-smooth-scroll>Facilities</a></li>
+            <li><a href="#rooms" data-uk-smooth-scroll="{offset: 30}">Rooms</a></li>
+            <li><a href="#blog" data-uk-smooth-scroll>Blog</a></li>
+            <li><a href="#testimonials" data-uk-smooth-scroll>Testimonials</a></li>
+            <li><a href="#events" data-uk-smooth-scroll>Events</a></li>
+            <li><a href="#contact" data-uk-smooth-scroll>Contact</a></li>
+          </ul>
+        </div>
+        <div class="uk-width-1-10 uk-hidden-medium uk-hidden-small">
+          <a href="#" class="search-icon uk-float-right" title="Search"><i class="fa fa-search"></i></a>
+          <div class="uk-button-dropdown lang-btn" data-uk-dropdown="{mode:'click'}">
+            <button class="uk-button dropdown-toggle" type="button" id="dropdownMenuLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="drp-name" data-bind="label">EN</span> <i class="fa fa-caret-down"></i></button>
+            <div class="uk-dropdown uk-dropdown-bottom" aria-hidden="true" style="top: 30px; left: 0px;">
+              <ul class="uk-nav uk-nav-dropdown dropdown-menu" aria-labelledby="dropdownMenuLang">
+                <li><a>HI</a></li>
+                <li><a>RU</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a href="#nav-offcanvas" class="uk-navbar-toggle nav-off-toggle uk-hidden-large" data-uk-offcanvas="{mode:'slide'}"></a>
+      </div>
+    </div>
+    <!-- search -->
+      <div class="search">
+        <div class="search-container clearfix">
+          <input type="search" class="search-box" placeholder="Type anything here...."/>
+          <a href="#" class="fa fa-times search-close"></a>
+        </div>
+      </div>
+    <!-- end search -->
+  </header>
+<!--  end navigation -->
+<!-- mobile navigation -->
+  <div id="nav-offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+      <ul class="uk-nav uk-nav-offcanvas" data-uk-scrollspy-nav="{closest:'li'}">
+        <li><a href="#home-slider">Home</a></li>
+        <li><a href="#about" data-uk-smooth-scroll>About</a></li>
+        <li><a href="#facilities" data-uk-smooth-scroll>Facilities</a></li>
+        <li><a href="#rooms" data-uk-smooth-scroll="{offset: 30}">Rooms</a></li>
+        <li><a href="#blog" data-uk-smooth-scroll>Blog</a></li>
+        <li><a href="#testimonials" data-uk-smooth-scroll>Testimonials</a></li>
+        <li><a href="#events" data-uk-smooth-scroll>Events</a></li>
+        <li><a href="#contact" data-uk-smooth-scroll>Contact</a></li>
+      </ul>
+    </div>
+  </div>
+<!-- end mobile navigation -->
+<!-- slider -->
+  <section id="home-slider" class="home-slider">
+    <div data-uk-slideshow="{animation: 'scale', autoplay: true}">
+      <ul class="uk-slideshow uk-overlay-active uk-text-center">
+        <li>
+          <img src="images/bg/slider-01.jpg" alt="slider">
+          <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
+            <div class="slider-dtl">
+              <div class="slider-heading-block">
+                <h1 class="slider-sub-heading uk-animation-scale-up">Присоединяйтесь к Третьей Международной Образовательной Конференции</h1>
+                <h4 class="slider-heading uk-animation-scale-up">28-29 сентября: Учитесь у ведущих экспертов отрасли и расширяйте свои возможности</h4>
+              </div>
+              <div class="slider-btn">
+                <a href="#" class="uk-button uk-animation-scale-up">Book Hotel</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="images/bg/slider-02.jpg" alt="slider">
+          <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
+            <div class="slider-dtl">
+              <div class="slider-heading-block">
+                <h4 class="slider-sub-heading uk-animation-scale-up">You will appreciate our services</h4>
+                <h1 class="slider-heading uk-animation-scale-up">Top Hotel</h1>
+              </div>
+              <div class="slider-btn uk-animation-scale-up">
+                <a href="#" class="uk-button">Book Hotel</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="images/bg/slider-03.jpg" alt="slider">
+          <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
+            <div class="slider-dtl">
+              <div class="slider-heading-block">
+                <h4 class="slider-sub-heading uk-animation-scale-up">World's best infrastructure</h4>
+                <h1 class="slider-heading uk-animation-scale-up">Luxury Rooms</h1>
+              </div>
+              <div class="slider-btn uk-animation-scale-up">
+                <a href="#" class="uk-button">Book Hotel</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <a href="#" class="uk-slidenav uk-slidenav-previous" data-uk-slideshow-item="previous" title="Previous"></a>
+      <a href="#" class="uk-slidenav uk-slidenav-next" data-uk-slideshow-item="next" title="Next"></a>
+    </div>
+  </section>
+<!-- end slider -->
+<!-- booking -->
+  <!-- <section id="booking" class="booking-main-block" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+    <div class="uk-container uk-container-center">
+      <form id="booking-form" class="uk-form booking-form">
+        <div class="uk-grid uk-grid-collapse">
+          <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
+            <div class="form-group">
+              <h6 class="booking-heading">Check In</h6>
+              <input type="text" data-uk-datepicker="{format:'DD / MM'}" placeholder="25 / July">
+              <i class="fa fa-caret-down date-arrow"></i>
+            </div>
+          </div>
+          <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
+            <div class="form-group">
+              <h6 class="booking-heading">Check Out</h6>
+              <input type="text" data-uk-datepicker="{format:'DD / MM'}" placeholder="25 / July">
+              <i class="fa fa-caret-down date-arrow"></i>
+            </div>
+          </div>
+          <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
+            <div class="form-group">
+              <h6 class="booking-heading">Guests</h6>
+              <div class="uk-button-dropdown guests-btn" data-uk-dropdown="{mode:'click'}">
+                <button class="uk-button dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="drp-name" data-bind="label">1</span> <i class="fa fa-caret-down"></i></button>
+                <div class="uk-dropdown uk-dropdown-bottom" aria-hidden="true">
+                  <ul class="uk-nav uk-nav-dropdown dropdown-menu" aria-labelledby="dropdownMenu">
+                    <li><a>2</a></li>
+                    <li><a>3</a></li>
+                    <li><a>4</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1 uk-text-center">
+            <div class="booking-btn">
+              <button type="submit" class="uk-button btn-gold">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section> -->
+
+
+
+<!-- end booking -->
+<!-- about -->
+  <section id="about" class="about-main-block" style="margin-top: 25px;">
+    <div class="uk-container uk-container-center">
+      <div class="uk-grid">
+        <div class="uk-width-large-1-2 uk-text-center">
+          <div class="about-block">
+            <h6 class="about-sub-heading">Организатор</h6>
+            <h1 class="about-heading">Минара Кенжебаева</h1>
+            <p>Руководитель 3 детских садов и школы 'Точка Роста', более 12 лет в сфере образования.</p>
+            <div class="about-btn">
+              <a href="#" class="uk-button btn-gold" title="Read More">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="uk-width-large-1-2">
+          <div class="about-bg">
+            <img src="images/bg/about-bg.jpg" alt="about">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- end about -->
+<!-- facilities -->
+  <section id="facilities" class="facilities-main-block uk-text-center">
+    <div class="section">
+      <h6 class="section-sub-heading">Facilities</h6>
+      <h3 class="section-heading">Лидерство и стратегия для руководителей образовательных учреждений</h3>
+    </div>
+    <div class="uk-grid uk-grid-collapse">
+      <div class="uk-width-large-1-4 uk-width-medium-1-2">
+        <div class="facilities-block uk-overlay-active">
+          <div class="facilities-img">
+            <img src="images/facilities/chubarova.JPG" alt="facilities">
+            <div class="overlay-bg">
+              <h3 class="facilities-dtl-heading">Александра Чубарова</h3>
+            </div>
+          </div>
+          <div class="uk-overlay-panel uk-overlay-background">
+            <div class="facilities-dtl">
+              <h4 class="facilities-dtl-heading">Александра Чубарова</h4>
+              <h6 class="facilities-dtl-sub-heading">г. Москва</h6>
+              <p>Финансовый директор компании "Нескучные финансы" - Тема: "Построй свою финансовую стратегию на 2025 год."</p>
+              <!-- <a href="#" class="learn-more" title="Learn More">Learn More</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-width-large-1-4 uk-width-medium-1-2">
+        <div class="facilities-block uk-overlay-active">
+          <div class="facilities-img">
+            <img src="images/facilities/avdeeva.JPG" alt="facilities">
+            <div class="overlay-bg">
+              <h2 class="facilities-dtl-heading">Людмила Авдеева</h2>
+            </div>
+          </div>
+          <div class="uk-overlay-panel uk-overlay-background">
+            <div class="facilities-dtl">
+              <h4 class="facilities-dtl-heading">Людмила Авдеева</h4>
+              <h6 class="facilities-dtl-sub-heading">г. Москва</h6>
+              <p>Детский психолог и нейропсихолог - Тема: "Эффективная организация психологического сопровождения в образовательных учреждениях.</p>
+              <!-- <a href="#" class="learn-more" title="Learn More">Learn More</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-width-large-1-4 uk-width-medium-1-2">
+        <div class="facilities-block uk-overlay-active">
+          <div class="facilities-img">
+            <img src="images/facilities/prashkevich.JPEG" alt="facilities">
+            <div class="overlay-bg">
+              <h2 class="facilities-dtl-heading">Жанна Прашкевич</h2>
+            </div>
+          </div>
+          <div class="uk-overlay-panel uk-overlay-background">
+            <div class="facilities-dtl">
+              <h4 class="facilities-dtl-heading">Жанна Прашкевич</h4>
+              <!-- <h6 class="facilities-dtl-sub-heading">Restaurants</h6> -->
+              <p>Консультант по организационному развитию - Воркшоп: "Компас руководителя: Эффективность и баланс в жизни и бизнесе.</p>
+              <!-- <a href="#" class="learn-more" title="Learn More">Learn More</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-width-large-1-4 uk-width-medium-1-2">
+        <div class="facilities-block uk-overlay-active">
+          <div class="facilities-img">
+            <img src="images/facilities/facilities-04.jpg" alt="facilities">
+            <div class="overlay-bg">
+              <h2 class="facilities-dtl-heading">Наталья Пичугова</h2>
+            </div>
+          </div>
+          <div class="uk-overlay-panel uk-overlay-background uk-overlay">
+            <div class="facilities-dtl">
+              <h4 class="facilities-dtl-heading">Наталья Пичугова</h4>
+              <!-- <h6 class="facilities-dtl-sub-heading">Gym</h6> -->
+              <p>Как HR-брендинг помогает в наборе и удержании сотрудников.</p>
+              <!-- <a href="#" class="learn-more" title="Learn More">Learn More</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- end facilities -->
+<!-- rooms -->
+  <section id="rooms" class="rooms-main-block">
+    <div class="uk-container uk-container-center">
+      <div class="section uk-text-center">
+        <h6 class="section-sub-heading">Rooms</h6>
+        <h2 class="section-heading">Наши спикеры</h2>
+      </div>
+      <div class="uk-slidenav-position" data-uk-slideshow="{animation: 'scale', autoplay: true, autoplayInterval : 5000}">
+        <ul class="uk-slideshow uk-overlay-active">
+          <li>
+            <img src="images/facilities/chubarova.JPG" alt="slider">
+            <div class="uk-overlay-panel uk-overlay-background uk-overlay-right uk-overlay-slide-right uk-width-large-5-12 uk-width-medium-1-3">
+              <div class="rooms-dtl">
+                <h5 class="rooms-heading">Александра Чубарова</h5>
+                <p>
+                  <ul>
+                    <li>* Финансовый директор в компании «Нескучные финансы».</li>
+                    <li>* Опыт работы в финансах в сфере финансов более 7 лет.</li>
+                    <li>* С нуля выстроила учет в 6 компаниях.</li>
+                  </ul>
+                </p>
+                <!-- <div class="rooms-btn">
+                  <a href="#" class="uk-button" title="Learn More">Learn More</a>
+                </div> -->
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="images/facilities/avdeeva.JPG" alt="slider">
+            <div class="uk-overlay-panel uk-overlay-background uk-overlay-right uk-overlay-slide-right uk-width-large-5-12 uk-width-medium-1-3">
+              <div class="rooms-dtl">
+                <h5 class="rooms-heading">Людмила Авдеева</h5>
+                <p>
+                  <ul>
+                    <li>* Детский психолог, нейропсихолог, кандидат психологических наук.</li>
+                    <li>* Руководитель Психологической службы ОАНО "Новая школа".</li>
+                    <li>* Многодетная мама.</li>
+                  </ul>
+                </p>
+                <!-- <div class="rooms-btn">
+                  <a href="#" class="uk-button" title="Learn More">Learn More</a>
+                </div> -->
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="images/rooms/room-03.jpg" alt="slider">
+            <div class="uk-overlay-panel uk-overlay-background uk-overlay-right uk-overlay-slide-right uk-width-large-5-12 uk-width-medium-1-3">
+              <div class="rooms-dtl">
+                <h3 class="rooms-heading">Omi Hotel</h3>
+                <p>Lorem ipsum dolor de betl oirp akro omie qpoe vdoe voal lorem assir prio omani epro lorm rito kalsik khalisi dolor mortin kabalo</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil repellendus commodi labore eum illo expedita, corporis distinctio modi ipsam similique animi soluta nam placeat possimus minima tempore, nobis alias eos!</p>
+                <div class="rooms-btn">
+                  <a href="#" class="uk-button" title="Learn More">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="images/rooms/room-04.jpg" alt="slider">
+            <div class="uk-overlay-panel uk-overlay-background uk-overlay-right uk-overlay-slide-right uk-width-large-5-12 uk-width-medium-1-3">
+              <div class="rooms-dtl">
+                <h3 class="rooms-heading">Omi Hotel</h3>
+                <p>Lorem ipsum dolor de betl oirp akro omie qpoe vdoe voal lorem assir prio omani epro lorm rito kalsik khalisi dolor mortin kabalo</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil repellendus commodi labore eum illo expedita, corporis distinctio modi ipsam similique animi soluta nam placeat possimus minima tempore, nobis alias eos!</p>
+                <div class="rooms-btn">
+                  <a href="#" class="uk-button" title="Learn More">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+          <li data-uk-slideshow-item="0"><a href="#"></a></li>
+          <li data-uk-slideshow-item="1"><a href="#"></a></li>
+          <li data-uk-slideshow-item="2"><a href="#"></a></li>
+          <li data-uk-slideshow-item="3"><a href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+<!-- end rooms -->
+<!-- blog -->
+  <section id="blog" class="blog-main-block">
+    <div class="uk-container uk-container-center">
+      <div class="section uk-text-center">
+        <h6 class="section-sub-heading">Omi News</h6>
+        <h2 class="section-heading">Latest From Blog</h2>
+      </div>
+      <div class="uk-grid">
+        <div class="uk-width-large-1-3 uk-width-medium-1-2">
+          <div class="blog-block">
+            <div class="blog-img">
+              <img src="images/blog/blog-01.jpg" alt="blog">
+            </div>
+            <div class="blog-dtl">
+              <div class="post-date"><i class="fa fa-clock-o"></i><a href="#" title="22 July, 2017"> 22 July, 2017</a></div>
+              <h5 class="post-title"><a href="#" title="Hotel Visiting Guide">Hotel Visiting Guide</a></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud.</p>
+              <div class="post-btn">
+                <a href="#" class="uk-button btn-gold" title="Read More">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-width-large-1-3 uk-width-medium-1-2">
+          <div class="blog-block">
+            <div class="blog-img">
+              <img src="images/blog/blog-02.jpg" alt="blog">
+            </div>
+            <div class="blog-dtl">
+              <div class="post-date"><i class="fa fa-clock-o"></i><a href="#" title="29 July, 2017"> 29 July, 2017</a></div>
+              <h5 class="post-title"><a href="#" title="Free Wi-Fi Rooms">Free Wi-Fi Rooms</a></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud.</p>
+              <div class="post-btn">
+                <a href="#" class="uk-button btn-gold" title="Read More">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-width-large-1-3 uk-width-medium-1-2">
+          <div class="blog-block">
+            <div class="blog-img">
+              <img src="images/blog/blog-03.jpg" alt="blog">
+            </div>
+            <div class="blog-dtl">
+              <div class="post-date"><i class="fa fa-clock-o"></i><a href="#" title="31 July, 2017"> 31 July, 2017</a></div>
+              <h5 class="post-title"><a href="#" title="Top Rated Dinner Facility">Top Rated Dinner Facility</a></h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud.</p>
+              <div class="post-btn">
+                <a href="#" class="uk-button btn-gold" title="Read More">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </section>
+<!-- end blog -->
+<!-- testimonial -->
+  <section id="testimonials" class="testimonials-main-block uk-overlay-active" data-uk-parallax="{bg: -200}" style="background-image: url('images/bg/testimonials-bg.jpg');">
+    <div class="uk-overlay-panel uk-overlay-background"></div>
+    <div class="uk-container uk-container-center uk-text-center">
+      <div class="section">
+        <h6 class="section-sub-heading">Testimonials</h6>
+        <h2 class="section-heading">What our clients says</h2>
+      </div>
+      <div class="uk-slidenav-position" data-uk-slider="{infinite:true, autoplay:true, autoplayInterval:3000}">
+        <div class="uk-slider-container">
+          <ul class="uk-slider uk-grid-width-1-1">
+            <li>
+              <div class="testimonials-block">
+                <div class="testimonials-dtl">
+                  <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos mauris justo dapibus condimentum amet augue sed non lorem iswp pkir dnhne foju edfndnf wjdbeuo djjh ishdue lroemn game pori morin kanfri pper deuh.</p>
+                  <div class="client-img">
+                    <img src="images/clients/client-01.jpg" class="uk-border-circle" alt="client">
+                  </div>
+                  <h6 class="client-name">John Snow</h6>
+                  <div class="client-dtl">Sr. Developer - Media City</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="testimonials-block">
+                <div class="testimonials-dtl">
+                  <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos mauris justo dapibus condimentum amet augue sed non lorem iswp pkir dnhne foju edfndnf wjdbeuo djjh ishdue lroemn game pori morin kanfri pper deuh.</p>
+                  <div class="client-img">
+                    <img src="images/clients/client-02.jpg" class="uk-border-circle" alt="client">
+                  </div>
+                  <h6 class="client-name">Cersi Lenister</h6>
+                  <div class="client-dtl">Director - Media City</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+          <li data-uk-slider-item="0"><a href="#"></a></li>
+          <li data-uk-slider-item="1"><a href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+<!-- end testimonial -->
+<!-- events -->
+  <section id="events" class="events-main-block">
+    <div class="uk-container uk-container-center uk-text-center">
+      <div class="uk-grid">
+        <div class="uk-width-medium-1-2 uk-width-small-1-1">
+          <div class="slider">
+            <div class="uk-panel slide">
+              <div class="uk-panel-teaser">
+                <img src="images/events/event-01.jpg" alt="event">
+                <div class="events-icon">
+                  <a href="#" title="Book"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+              </div>
+              <div class="events-body">
+                <div class="events-btn">
+                  <div class="uk-grid uk-grid-collapse">
+                    <div class="uk-width-1-2">
+                      <div class="events-price">$ 454.00</div>
+                    </div>
+                    <div class="uk-width-1-2">
+                      <a href="#" title="Book">Book</a>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="uk-panel-title"><a href="#" title="Event Title">The Most Famous Hotel Room in Bhilwara</a></h4>
+                <p>lorem ipsum dolor mortis game of gorilla mortinswqp thrones lennister always plays their debts vallar morghulis vallar doharies the khalisi iporiu.</p>
+              </div>
+            </div>
+            <div class="uk-panel slide">
+              <div class="uk-panel-teaser">
+                <img src="images/events/event-02.jpg" alt="event">
+                <div class="events-icon">
+                  <a href="#" title="Book"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+              </div>
+              <div class="events-body">
+                <div class="events-btn">
+                  <div class="uk-grid uk-grid-collapse">
+                    <div class="uk-width-1-2">
+                      <div class="events-price">$ 250.00</div>
+                    </div>
+                    <div class="uk-width-1-2">
+                      <a href="#" title="Book">Book</a>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="uk-panel-title"><a href="#" title="Event Title">Two Room Hotel Booking Services</a></h4>
+                <p>lorem ipsum dolor mortis game of gorilla mortinswqp thrones lennister always plays their debts vallar morghulis vallar doharies the khalisi iporiu.</p>
+              </div>
+            </div>
+            <div class="uk-panel slide">
+              <div class="uk-panel-teaser">
+                <img src="images/events/event-03.jpg" alt="event">
+                <div class="events-icon">
+                  <a href="#" title="Book"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+              </div>
+              <div class="events-body">
+                <div class="events-btn">
+                  <div class="uk-grid uk-grid-collapse">
+                    <div class="uk-width-1-2">
+                      <div class="events-price">$578.00</div>
+                    </div>
+                    <div class="uk-width-1-2">
+                      <a href="#" title="Book">Book</a>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="uk-panel-title"><a href="#" title="Event Title">The Emila Room Service Hotel</a></h4>
+                <p>lorem ipsum dolor mortis game of gorilla mortinswqp thrones lennister always plays their debts vallar morghulis vallar doharies the khalisi iporiu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-width-medium-1-2 uk-width-small-1-1">
+          <div class="events-text-block">
+            <div class="section">
+              <h2 class="section-heading">Our Most Popular Rooms at Omi Hotel</h2>
+            </div>
+            <div class="events-dtl-block">
+              <h6 class="events-top-heading">5 Star hotel at cheapest price, you will <span>never forget the experience</span></h6>
+            </div>
+            <div class="events-dtl-block">
+              <h6 class="events-heading">We are top 500 hotel in  the world</h6>
+              <p>lorem ipsum dolor mortis game of gorilla mortinswqp thrones lennister always plays their debts vallar morghulis</p>
+            </div>
+            <div class="events-dtl-block">
+              <h6 class="events-heading">Gold Medalist</h6>
+              <p>Your lorem Thwlo Lorem Ipsum Dolor Mortis mhants tlpop tilsk breaking bad suits harvey spectere</p>
+            </div>
+            <h6 class="events-heading">We are the best</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- end events -->
+<!-- video -->
+  <div id="video" class="video-main-block">
+      <div class="video-item">
+        <script type="text/javascript">
+          var video_url = '<iframe src="http://www.youtube.com/embed/Wd7DTBgwIos?autoplay=1&showinfo=0" frameborder="0"></iframe>';
+        </script>
+        <div class="video-device">
+          <img src="images/bg/video-bg.jpg" alt="video-bg" />
+          <div class="video-preview uk-overlay-panel uk-overlay-background">
+            <a href="javascript:void(0);" class="btn-video-play"><i class="flaticon-play-button"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- end video -->
+<!-- contact -->
+  <section id="contact" class="contact-main-block">
+    <div class="uk-grid uk-grid-collapse">
+      <div class="uk-width-large-1-2 uk-vertical-align" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay: 500}">
+        <div class="contact-block uk-vertical-align-middle">
+          <div class="section">
+            <h6 class="section-sub-heading">Have a question?</h6>
+            <h2 class="section-heading">Contact Us</h2>
+          </div>
+          <div class="address-block">
+            <h6 class="contact-heading"><i class="fa fa-home"></i> Address: </h6>
+            <ul>
+              <li>Media City</li>
+              <li>I-554, Near Vishal Mega Mart,</li>
+              <li>Bhilwara, Rajasthan, 311001, India</li>
+            </ul>
+          </div>
+          <div class="address-block">
+            <h6 class="contact-heading"><i class="fa fa-phone"></i> Phone: </h6>
+            <a href="tel:#">+91 99774 99774</a>
+          </div>
+          <div class="address-block">
+            <h6 class="contact-heading"><i class="fa fa-envelope"></i> Email</h6>
+            <a href="mailto:#">info@omiproject.co.in</a>
+          </div>
+        </div>
+      </div>
+      <div class="uk-width-large-1-2" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay: 1000}">
+        <div class="contact-map">
+          <div id="location" class="map-banner"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- end contact -->
+<!-- footer -->
+  <footer id="footer" class="footer-main-block">
+    <div class="footer-block">
+      <div class="uk-container uk-container-center">
+        <div class="uk-grid">
+          <div class="uk-width-large-1-3 uk-width-medium-1-2">
+            <div class="weather-widget footer-widget">
+              <h5 class="widget-heading">Weather</h5>
+              <h6 class="widget-sub-heading">Bhilwara, India</h6>
+              <div class="weather">
+                <div class="uk-grid uk-grid-medium">
+                  <div class="uk-width-1-2">
+                    <i class="fa fa-sun-o"></i>
+                  </div>
+                  <div class="uk-width-1-2">
+                    <div class="temperature">16 <sup>&deg; C</sup></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="uk-width-large-1-3 uk-width-medium-1-2">
+            <div class="social-widget footer-widget">
+              <h5 class="widget-heading">Connect With Us</h5>
+              <h6 class="widget-sub-heading">Follow us on</h6>
+              <ul>
+                <li><a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.plus.google.com/" target="_blank" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://www.behance.net/" target="_blank" title="Behance"><i class="fa fa-behance"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="uk-width-large-1-3 uk-width-medium-1-2">
+            <div class="newsletter footer-widget">
+              <h5 class="widget-heading">Subscribe Newsletter</h5>
+              <h6 class="widget-sub-heading">Get Latest Updates</h6>
+              <form id="newsletter-form" class="uk-form">
+                <div class="uk-grid uk-grid-collapse">
+                  <div class="uk-width-7-10">
+                    <input type="text" id="mc-email" class="uk-form-controls" placeholder="Enter Email">
+                  </div>
+                  <div class="uk-width-3-10">
+                    <button type="submit" class="uk-button btn-gold">Submit</button>
+                  </div>
+                  <label for="mc-email"></label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <div class="uk-container uk-container-center">
+        <div class="uk-grid">
+          <div class="uk-width-large-4-10 uk-width-medium-1-2 uk-width-small-1-1">
+            <ul>
+              <li><a href="#home-slider" data-uk-smooth-scroll>Home</a></li>
+              <li><a href="#about" data-uk-smooth-scroll="{offset: 60}">About</a></li>
+              <li><a href="#facilities" data-uk-smooth-scroll>Facilities</a></li>
+              <li><a href="#rooms" data-uk-smooth-scroll="{offset: 30}">Rooms</a></li>
+              <li><a href="#events" data-uk-smooth-scroll>Events</a></li>
+            </ul>
+          </div>
+          <div class="uk-width-large-6-10 uk-width-medium-1-2 uk-width-small-1-1">
+            <div class="brands-block uk-float-right">
+              <div class="uk-grid">
+                <div class="uk-width-1-3">
+                  <div class="brand-logo">
+                    <img src="images/brands/brand-01.png" alt="brands">
+                  </div>
+                </div>
+                <div class="uk-width-1-3">
+                  <div class="brand-logo">
+                    <img src="images/brands/brand-02.png" alt="brands">
+                  </div>
+                </div>
+                <div class="uk-width-1-3">
+                  <div class="brand-logo">
+                    <img src="images/brands/brand-03.png" alt="brands">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- end footer -->
+<!-- jquery -->
+<script type="text/javascript" src="js/jquery.min.js"></script> <!-- jquery library js -->
+<script type="text/javascript" src="js/uikit.min.js"></script> <!-- uikit js -->
+<script type="text/javascript" src="js/slideshow.js"></script> <!-- slideshow js-->
+<script type="text/javascript" src="js/slideshow-fx.js"></script> <!-- slideshow fx js-->
+<script type="text/javascript" src="js/cover.min.js"></script> <!-- cover js-->
+<script type="text/javascript" src="js/scrollspy.min.js"></script> <!-- scrollspy js-->
+<script type="text/javascript" src="js/smooth-scroll.min.js"></script> <!-- smooth scroll js-->
+<script type="text/javascript" src="js/slider.js"></script> <!-- slider js-->
+<script type="text/javascript" src="js/parallax.min.js"></script> <!-- parallax js-->
+<script type="text/javascript" src="js/datepicker.js"></script> <!-- datepicker js-->
+<script type="text/javascript" src="js/lightbox.js"></script> <!-- lightbox js -->
+<script type="text/javascript" src="js/jquery.ajaxchimp.js"></script> <!-- mail chimp js -->  
+<script type="text/javascript" src="js/sticky.min.js"></script> <!-- slideshow js-->
+<script type="text/javascript" src="js/theme.js"></script> <!-- custom js -->
+<script>
+  $(function($)  {
+      // Asynchronously Load the map API 
+      var script = document.createElement('script');
+      script.src = "https://maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
+      document.body.appendChild(script);
+    });
+    function initialize(){
+      var myLatLng = {lat: 25.3500, lng: 74.6333}; // Insert Your Latitude and Longitude For Footer Wiget Map
+      var mapOptions = {
+        center: myLatLng, 
+        zoom: 15,
+        disableDefaultUI: true,
+        scrollwheel: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      // For Footer Widget Map
+      var map = new google.maps.Map(document.getElementById("location"), mapOptions);
+      var image = 'images/map-logo.png';
+      var beachMarker = new google.maps.Marker({
+        position: myLatLng, 
+        map: map,   
+        icon: image
+      });    
+    }
+</script>
+<!-- end jquery -->
+</body>
+<!--body end -->
+</html>
