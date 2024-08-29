@@ -812,7 +812,7 @@ button {
 .facilities-dtl {
   position: relative;
   top: 50%;
-  padding: 0 15px;
+  padding: 0 5px;
   transform: translateY(-50%);
 }
 .facilities-dtl p {
@@ -865,6 +865,13 @@ button {
 
 .speakers {
   margin: 0;
+  padding: 0;
+}
+
+.speakers1 {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
 }
 
 /* ================================= */
