@@ -326,6 +326,7 @@ button {
 .section-heading {
   text-transform: none;
   line-height: 1.3;
+  color: #E7AD44;
 }
 
 .overlay-bg {
@@ -816,7 +817,7 @@ button {
 }
 .facilities-dtl p {
   color: #FFF;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
 .learn-more {
@@ -860,6 +861,10 @@ button {
   -o-transform: scale(1);
   transform: scale(1);
   opacity: 1;
+}
+
+.speakers {
+  margin: 0;
 }
 
 /* ================================= */
@@ -1016,7 +1021,7 @@ button {
   padding-bottom: 40px;
 }
 .testimonials-main-block .section .section-heading {
-  color: #FFF;
+  color: #fff;
 }
 .testimonials-main-block .uk-dotnav > * {
   padding-bottom: 40px;
@@ -1050,6 +1055,66 @@ button {
   border: 2px solid #E7AD44;
   border-radius: 100%;
   margin: 0 auto 20px;
+}
+
+.uk-countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.clock {
+  margin: 1rem auto;
+}
+.clock-container {
+  border-radius: 12px;
+  /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4), 0 15px 90px 30px rgba(0, 0, 0, 0.4); */
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .clock-container {
+    max-width: 320px;
+  }
+}
+.clock-col {
+  flex: 25%;
+  max-width: 200px;
+  text-align: center;
+  border: 2px solid #1a2026;
+  border-radius: 12px;
+  background: #E7AD44;
+  background: linear-gradient(180deg, #b8882e 0%, #86621e 100%);
+}
+@media screen and (max-width: 600px) {
+  .clock-col {
+    flex: 50%;
+  }
+}
+.clock-timer {
+  font-size: 3.6rem;
+  padding: 50px 0;
+  box-shadow: 0 -5px 5px -5px #333;
+}
+.clock-label {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding: 20px 0;
+  margin: 0;
+  border-radius: 12px;
+
+  background: #E7AD44;
+  background: linear-gradient(180deg, #b8882e 0%, #412b04 100%);
+  border-top: 1px solid #013e5b;
 }
 
 .client-name {
