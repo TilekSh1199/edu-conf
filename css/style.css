@@ -771,7 +771,7 @@ button {
   opacity: 0;
   padding-bottom: 10px;
 }
-.facilities-block:hover .uk-overlay-panel {
+.facilities-block .uk-overlay-panel {
   -webkit-transform: translate(-50%, -50%) scale(1);
   -moz-transform: translate(-50%, -50%) scale(1);
   -ms-transform: translate(-50%, -50%) scale(1);
@@ -1478,6 +1478,59 @@ button {
 .footer-block {
   background-color: rgba(0, 0, 0, 0.9);
   padding: 70px 0;
+}
+.footer-block2 {
+  background-color: rgb(236, 235, 235);
+  padding: 70px 0;
+}
+.appointment-form {
+  max-width: 550px;
+  margin: 0 auto;
+}
+.appointment-form .form-group {
+  position: relative;
+}
+.appointment-form .form-group i {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  transform: translateY(50%);
+}
+.appointment-form .form-control {
+  width: 100%;
+  height: 40px !important;
+  margin-bottom: 20px;
+  outline: none;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.appointment-form .form-control:focus, .appointment-form .form-control:active {
+  background: #FFF !important;
+  border-color: rgba(44, 174, 226, 0.7) !important;
+}
+.appointment-form .form-textarea {
+  height: 70px !important;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #DDD;
+}
+.appointment-form .form-textarea::-webkit-input-placeholder {
+  padding-left: 4px;
+}
+.appointment-form .form-textarea::-moz-placeholder {
+  padding-left: 4px;
+}
+.appointment-form .form-textarea::-ms-input-placeholder {
+  padding-left: 4px;
+}
+.appointment-form .form-textarea::-o-input-placeholder {
+  padding-left: 4px;
+}
+.appointment-form .uk-button {
+  width: 100%;
 }
 
 .widget-heading {

@@ -162,4 +162,35 @@
         url: 'http://blahblah.us1.list-manage.com/subscribe/post?u=5afsdhfuhdsiufdba6f8802&id=4djhfdsh9'
     });
 
+	document.getElementById('contact-form').addEventListener('submit', function(event) {
+		event.preventDefault(); // Остановка стандартного действия формы (перезагрузки страницы)
+	
+		var formData = new FormData(this);
+	
+		fetch('https://script.google.com/macros/s/AKfycbwGZ2PzLPzRhvTuG6FJDshm8Fc35vgbfPc2btiKoJnG-EwhOKPNF2kQbK5f42rXHZz7/exec', {
+			method: 'POST',
+			body: formData,
+		})
+		.then(response => response.json())
+		.then(data => {
+			if (data.result === 'success') {
+				// Очистка формы
+				document.getElementById('contact-form').reset();
+	
+				// Отображение сообщения об успешной регистрации
+				document.getElementById('responseMessage').style.display = 'block';
+	
+				// Скрытие сообщения через несколько секунд (необязательно)
+				// setTimeout(() => {
+				// 	document.getElementById('responseMessage').style.display = 'none';
+				// }, 3000);
+			} else {
+				alert('Ошибка отправки данных. Попробуйте еще раз.');
+			}
+		})
+		.catch(error => {
+			console.error('Ошибка:', error);
+		});
+	});
+
 })(jQuery);
