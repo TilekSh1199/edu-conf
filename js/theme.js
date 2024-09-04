@@ -164,21 +164,25 @@
 
 	document.getElementById('contact-form').addEventListener('submit', function(event) {
 		event.preventDefault(); // Остановка стандартного действия формы (перезагрузки страницы)
+		document.getElementById('contact-form').style.display = 'none';
+    	document.getElementById('loader').style.display = 'block';
 	
 		var formData = new FormData(this);
 	
-		fetch('https://script.google.com/macros/s/AKfycbwGZ2PzLPzRhvTuG6FJDshm8Fc35vgbfPc2btiKoJnG-EwhOKPNF2kQbK5f42rXHZz7/exec', {
+		fetch('https://script.google.com/macros/s/AKfycbxUQti6DSbbgCTHhhwmDuoEH8QORN2bawE6GtZtzwcvz6Z8Vhq6AwWbMTBCuUCsptJd/exec', {
 			method: 'POST',
 			body: formData,
 		})
 		.then(response => response.json())
 		.then(data => {
 			if (data.result === 'success') {
+				// Отображение сообщения об успешной регистрации
+				document.getElementById('loader').style.display = 'none';
+				document.getElementById('responseMessage').style.display = 'block';
+
 				// Очистка формы
 				document.getElementById('contact-form').reset();
 	
-				// Отображение сообщения об успешной регистрации
-				document.getElementById('responseMessage').style.display = 'block';
 	
 				// Скрытие сообщения через несколько секунд (необязательно)
 				// setTimeout(() => {
@@ -190,6 +194,8 @@
 		})
 		.catch(error => {
 			console.error('Ошибка:', error);
+			document.getElementById('loader').style.display = 'none'; // Скрыть лоадер в случае ошибки
+        	document.getElementById('contact-form').style.display = 'block'; // Показать форму снова в случае ошибки
 		});
 	});
 
